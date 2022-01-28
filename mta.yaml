@@ -1,0 +1,19 @@
+ID: bas-test
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: db_deployer
+   type: hdb
+   path: db
+   requires:
+    - name: bastest-hdidb
+
+resources:
+ - name: bastest-hdidb
+   parameters:
+      config:
+         schema: BASTEST_SCHEMA_HDI_1
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="bas-test.db::d_customers" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="d_customers"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="bas-test.db::customers">
+    <resourceUri>bas-test.db::customers</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="bas-test.db::customers">
+  <attributes>
+    <attribute id="CUSTOMERID" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CUSTOMERID"/>
+      <keyMapping columnObjectName="customers" columnName="CUSTOMERID"/>
+    </attribute>
+    <attribute id="CITYID" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CITYID"/>
+      <keyMapping columnObjectName="customers" columnName="CITYID"/>
+    </attribute>
+    <attribute id="COUNTRYID" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="COUNTRYID"/>
+      <keyMapping columnObjectName="customers" columnName="COUNTRYID"/>
+    </attribute>
+    <attribute id="REGIONID" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="REGIONID"/>
+      <keyMapping columnObjectName="customers" columnName="REGIONID"/>
+    </attribute>
+    <attribute id="CUSTOMER" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CUSTOMER"/>
+      <keyMapping columnObjectName="customers" columnName="CUSTOMER"/>
+    </attribute>
+    <attribute id="CITYNAME" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CITYNAME"/>
+      <keyMapping columnObjectName="customers" columnName="CITYNAME"/>
+    </attribute>
+    <attribute id="COUNTRYNAME" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="COUNTRYNAME"/>
+      <keyMapping columnObjectName="customers" columnName="COUNTRYNAME"/>
+    </attribute>
+    <attribute id="REGIONNAME" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="REGIONNAME"/>
+      <keyMapping columnObjectName="customers" columnName="REGIONNAME"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

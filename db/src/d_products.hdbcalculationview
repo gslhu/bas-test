@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="bas-test.db::d_products" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="d_products"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="bas-test.db::products">
+    <resourceUri>bas-test.db::products</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="bas-test.db::products">
+  <attributes>
+    <attribute id="PRODUCTID" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRODUCTID"/>
+      <keyMapping columnObjectName="products" columnName="PRODUCTID"/>
+    </attribute>
+    <attribute id="CATEGORYID" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CATEGORYID"/>
+      <keyMapping columnObjectName="products" columnName="CATEGORYID"/>
+    </attribute>
+    <attribute id="LINEID" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LINEID"/>
+      <keyMapping columnObjectName="products" columnName="LINEID"/>
+    </attribute>
+    <attribute id="PRODUCTNAME" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRODUCTNAME"/>
+      <keyMapping columnObjectName="products" columnName="PRODUCTNAME"/>
+    </attribute>
+    <attribute id="PRODUCTDESCRIPTION" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRODUCTDESCRIPTION"/>
+      <keyMapping columnObjectName="products" columnName="PRODUCTDESCRIPTION"/>
+    </attribute>
+    <attribute id="CATEGORYNAME" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CATEGORYNAME"/>
+      <keyMapping columnObjectName="products" columnName="CATEGORYNAME"/>
+    </attribute>
+    <attribute id="CATEGORYDESCRIPTION" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CATEGORYDESCRIPTION"/>
+      <keyMapping columnObjectName="products" columnName="CATEGORYDESCRIPTION"/>
+    </attribute>
+    <attribute id="LINENAME" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LINENAME"/>
+      <keyMapping columnObjectName="products" columnName="LINENAME"/>
+    </attribute>
+    <attribute id="LINEDESCRIPTION" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LINEDESCRIPTION"/>
+      <keyMapping columnObjectName="products" columnName="LINEDESCRIPTION"/>
+    </attribute>
+    <attribute id="DISCONTINUED" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DISCONTINUED"/>
+      <keyMapping columnObjectName="products" columnName="DISCONTINUED"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>
